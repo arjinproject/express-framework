@@ -1,0 +1,24 @@
+{
+  "name": "express-framework",
+  "version": "1.0.0",
+  "description": "Express Framework ve NodeJs Eğitimi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjinproject/express-framework.git"
+  },
+  "keywords": [],
+  "author": "Hamit Seyrek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjinproject/express-framework/issues"
+  },
+  "homepage": "https://github.com/arjinproject/express-framework#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0"
+  }
+}
