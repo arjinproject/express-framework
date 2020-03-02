@@ -7,3 +7,5 @@ Express Framework ve NodeJs Eğitimi
 2- index.pug dosyasında if yapıları kullanmak
 
 3- layout içinde block yapıları
+
+4- statik dosya kullanımı -css gibi
