@@ -9,3 +9,5 @@ Express Framework ve NodeJs Eğitimi
 3- layout içinde block yapıları
 
 4- statik dosya kullanımı -css gibi
+
+5- routing işlemleri get-put-post-all
