@@ -2,11 +2,29 @@ html
     head 
         title merhaba pub
 body
+    - var okul = "Fırat Üniversitesi"
+    - var sehir = "Elazığ"
+    =okul
+    br
+    =sehir
+    br
+    | Bulunduğu şehir: #{sehir.toUpperCase()}
+    br
+    hr
+    - var sayi = 12
+    if !sayi
+        | sayı değişkeni yok
+    else if sayi==12
+        | sayı 12
+    else
+        | sayı 12 değil
+    hr
     span(style="color: white; background-color: red")
         | Merhaba Pug {#{name } #{surname}}  
         //- index sayfasından gelen değişkenler
         br
         =name
 
-        br
-        include footer
+    br
+    include footer
+    
