@@ -3,4 +3,10 @@ html
         title merhaba pub
 body
     span(style="color: white; background-color: red")
-        | Merhaba Pug
+        | Merhaba Pug {#{name } #{surname}}  
+        //- index sayfasından gelen değişkenler
+        br
+        =name
+
+        br
+        include footer
