@@ -11,3 +11,5 @@ Express Framework ve NodeJs Eğitimi
 4- statik dosya kullanımı -css gibi
 
 5- routing işlemleri get-put-post-all
+
+6- middleware-arakatman yapısı
