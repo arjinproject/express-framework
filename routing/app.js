@@ -5,17 +5,21 @@ const signUp = require("./routes/signUp");
 const users = require("./routes/users");
 
 
+// helper klasörü altında isLogin.js e taşındı
+// // middleware: arakatman req - middleware - res
+// app.use((req,res,next)=>{
+//     const isLogin = false;
+//     if (isLogin) {
+//         next();
+//     } else {
+//         res.send("Lütfen giriş yapın");
+//     }
+// });
+// // middleware: arakatman
 
-// middleware: arakatman req - middleware - res
-app.use((req,res,next)=>{
-    const isLogin = false;
-    if (isLogin) {
-        next();
-    } else {
-        res.send("Lütfen giriş yapın");
-    }
-});
-// middleware: arakatman
+// helpers
+const isLogin = require("./helper/isLogin")
+app.use(isLogin);
 
 app.use("/", signIn);
 app.use("/user", signUp);
