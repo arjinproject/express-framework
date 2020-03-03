@@ -17,15 +17,25 @@ const users = require("./routes/users");
 // });
 // // middleware: arakatman
 
-// helpers
-const isLogin = require("./helper/isLogin")
-app.use(isLogin);
+// // helpers
+// const isLogin = require("./helper/isLogin")
+// app.use(isLogin);
+
+app.set("view engine", "pug");
+
+app.use((err, req, res, next) => {
+    res.status(err.status);
+    res.render('error', {
+        message: err.message,
+        status: err.status
+    });
+});
 
 app.use("/", signIn);
 app.use("/user", signUp);
 app.use("/profile", users);
 
 // app.listen(3000);
-app.listen(3000, ()=>{
+app.listen(3000, () => {
     console.log("Express çalıştı");
 });

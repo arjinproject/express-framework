@@ -1,7 +1,7 @@
 // isLogin true olmadan hiçbir sayfa çalışmaz.
 
 const isLogin = (req,res,next)=>{
-    const isLogin = false;
+    const isLogin = true;
     if (isLogin) {
         next();
     } else {

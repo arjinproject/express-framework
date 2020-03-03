@@ -13,3 +13,5 @@ Express Framework ve NodeJs Eğitimi
 5- routing işlemleri get-put-post-all
 
 6- middleware-arakatman yapısı
+
+7- hata yönetimi
